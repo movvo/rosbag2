@@ -87,12 +87,6 @@ public:
   void open(
     const rosbag2_storage::StorageOptions & storage_options,
     const ConverterOptions & converter_options = ConverterOptions());
-
-
-  /**
-   * \brief Close the current bag file and write metadata.yaml file
-   */
-  void close();
   
   /**
    * Create a new topic in the underlying storage. Needs to be called for every topic used within
